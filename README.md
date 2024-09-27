@@ -1,5 +1,7 @@
 # Rep_Mask_RCNN
- 在UIIS数据集上训练Mask RCNN
+* 在UIIS数据集上训练Mask R-CNN
+* Backbone采用ResNet R50
+* ResNet中的卷积核被替换为RepVGG的结构重参数化卷积模块
 ## 环境配置：
 * Python3.6以上
 * Pytorch1.10或以上
@@ -25,4 +27,4 @@
 * 直接使用train.py进行训练
   
 ## 注意事项
-在使用训练脚本时，注意要将`--data-path`设置为自己存放数据集的**根目录**：
+在使用训练脚本时，注意要将`--data-path`设置为自己存放数据集的**根目录**
